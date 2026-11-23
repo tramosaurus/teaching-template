@@ -1,0 +1,6 @@
+<figure class="figure">
+  <img src="{{ include.src }}" alt="{{ include.alt }}">
+  {% if include.caption %}
+    <figcaption class="figure-caption">{{ include.caption | markdownify }}</figcaption>
+  {% endif %}
+</figure>
